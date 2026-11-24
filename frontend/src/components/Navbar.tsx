@@ -8,7 +8,6 @@ export default function Navbar() {
       </Link>
 
       <div className="ml-auto flex items-center gap-6">
-        <Link href="/about" className="hover:text-accent transition duration-200">About</Link>
         <Link href="/projects" className="hover:text-accent transition duration-200">Projects</Link>
         <Link
           href="https://github.com/mwxg"
