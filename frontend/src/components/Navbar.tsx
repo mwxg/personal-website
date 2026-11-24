@@ -16,7 +16,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="hover:text-accent transition duration-200"
         >
-          GitHub
+          GitHub ↗
         </Link>
         <Link
           href="https://www.linkedin.com/in/gareth-mcclellan/"
@@ -24,7 +24,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="hover:text-accent transition duration-200"
         >
-          LinkedIn
+          LinkedIn ↗
         </Link>
       </div>
     </nav>
