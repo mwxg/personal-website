@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Libertinus_Serif, Red_Hat_Display } from "next/font/google";
 import "./globals.css";
 
+import Navbar from "@/components/Navbar"
+
 const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
   weight: ["400", "800"],
@@ -22,7 +24,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${redHatDisplay.variable} ${libertinusSerif.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Navbar></Navbar>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
