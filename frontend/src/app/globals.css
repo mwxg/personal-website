@@ -4,10 +4,16 @@
   --font-sans: var(--font-red-hat-display), sans-serif;
   --font-serif: var(--font-libertinus-serif), serif;
   --font-weight-bold: 800;
+
+  --color-page: #0b0b0b;
+  --color-surface: #1d1d1d;
+  --color-ink: #c6cbef; /* text */
+  --color-accent: #f69dcf;
 }
 
 @layer base {
   body {
+    background-color: var(--color-page);
     font-family: var(--font-red-hat-display), sans-serif;
     font-weight: 400;
   }
