@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-red-hat-display), sans-serif;
+  --font-serif: var(--font-libertinus-serif), serif;
+  --font-weight-bold: 800;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-red-hat-display), sans-serif;
+    font-weight: 400;
+  }
+
+  b,
+  strong {
+    font-weight: 800;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-libertinus-serif), serif;
+    font-weight: 400;
+  }
+}

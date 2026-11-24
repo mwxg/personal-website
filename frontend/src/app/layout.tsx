@@ -1,5 +1,18 @@
 import type { Metadata } from "next";
+import { Libertinus_Serif, Red_Hat_Display } from "next/font/google";
 import "./globals.css";
+
+const redHatDisplay = Red_Hat_Display({
+  subsets: ["latin"],
+  weight: ["400", "800"],
+  variable: "--font-red-hat-display",
+});
+
+const libertinusSerif = Libertinus_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-libertinus-serif",
+});
 
 export const metadata: Metadata = {
   title: "Gareth McClellan",
@@ -8,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${redHatDisplay.variable} ${libertinusSerif.variable}`}>
       <body>{children}</body>
     </html>
   );
