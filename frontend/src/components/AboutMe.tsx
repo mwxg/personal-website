@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutMe() {
   return (
-    <section className="flex w-2/3 items-center gap-8 text-ink">
+    <section className="flex w-2/3 items-start gap-8 text-ink">
       <div className="w-1/3">
         <Image
           src="/images/placeholder.jpg"
