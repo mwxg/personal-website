@@ -85,7 +85,28 @@ h2 { font-size: clamp(2.4rem, 4vw, 3.8rem); }
   cursor: pointer;
 }
 
+
 .project-details-button:hover { background-color: var(--super-muted); }
+
+.project-details-dialog {
+  width: min(36rem, calc(100% - 2rem));
+  max-height: calc(100% - 2rem);
+  margin: auto;
+  padding: clamp(1rem, 4vw, 2rem);
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 1rem 3rem #0006;
+}
+
+.project-details-dialog::backdrop { background: #000a; }
+.project .project-details-dialog h3 { margin-top: 0; }
+.project-details-dialog p { white-space: pre-line; line-height: 1.65; }
+.project-details-dialog .project-details-button { background: var(--page); color: var(--ink); }
+.project-details-dialog .project-details-button:hover { background: var(--super-muted); }
+
 .footer { align-items: flex-end; gap: 1.5rem; flex-wrap: wrap; }
 .footer h2 { font-size: 2rem; margin-bottom: 1rem; }
 .footer .links { text-decoration: underline; text-underline-offset: .25em; }

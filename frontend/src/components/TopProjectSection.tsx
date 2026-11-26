@@ -1,4 +1,5 @@
 import ImageGallery from "./ImageGallery";
+import ProjectDetails from "./ProjectDetails";
 import ProjectImageStack from "./ProjectImageStack";
 
 type ProjectProps = {
@@ -9,7 +10,7 @@ type ProjectProps = {
   description: string;
 };
 
-export default function TopProjectSection({ images, title, summary, techStack }: ProjectProps) {
+export default function TopProjectSection({ images, title, summary, techStack, description }: ProjectProps) {
   return (
     <article className="project">
       {images.length > 1 ? (
@@ -20,9 +21,7 @@ export default function TopProjectSection({ images, title, summary, techStack }:
       <h3>{title}</h3>
       <p className="project-summary">{summary}</p>
       <p className="eyebrow">{techStack}</p>
-      <button type="button" className="project-details-button">
-        Project details<span className="sr-only"> for {title}</span>
-      </button>
+      <ProjectDetails title={title} description={description} />
     </article>
   );
 }
