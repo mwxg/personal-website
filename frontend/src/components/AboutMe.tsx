@@ -1,12 +1,4 @@
-import ImageGallery from "./ImageGallery";
-
-const photos = [
-  "/images/AboutMe/image1.jpg",
-  "/images/AboutMe/image2.jpeg",
-  "/images/AboutMe/image3.jpg",
-  "/images/AboutMe/image4.jpeg",
-  "/images/AboutMe/image5.jpg",
-] as const;
+import AboutPhotoCollage from "./AboutPhotoCollage";
 
 export default function AboutMe() {
   return (
@@ -17,7 +9,7 @@ export default function AboutMe() {
         <p className="intro">Computational Modeling &amp; Data Analytics student at Virginia Tech.</p>
         <a className="work-link" href="#projects">Explore projects</a>
       </div>
-      <ImageGallery images={photos} label="Gareth’s photo gallery" portrait />
+      <AboutPhotoCollage />
     </section>
   );
 }

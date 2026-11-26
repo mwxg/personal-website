@@ -6,16 +6,14 @@ import { useState } from "react";
 type GalleryProps = {
   images: readonly [string, ...string[]];
   label: string;
-  portrait?: boolean;
 };
 
-export default function ImageGallery({ images, label, portrait = false }: GalleryProps) {
+export default function ImageGallery({ images, label }: GalleryProps) {
   const [index, setIndex] = useState(0);
-  const frame = portrait ? "gallery portrait" : "gallery project-preview";
+  const frame = "gallery project-preview";
   const photo = (
     <Image src={images[index]} alt={`${label}, image ${index + 1}`} fill
-      loading={portrait ? "eager" : "lazy"}
-      sizes={portrait ? "(max-width: 720px) 90vw, 40vw" : "(max-width: 720px) 90vw, 33vw"} />
+      sizes="(max-width: 720px) 90vw, 33vw" />
   );
 
   if (images.length === 1) return <div className={frame}>{photo}</div>;

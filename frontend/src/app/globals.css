@@ -62,8 +62,6 @@ h1 { font-size: clamp(4rem, 7.7vw, 7rem); line-height: .94; margin-block: 1.3rem
 .work-link:hover { background: var(--ink); color: var(--page); }
 .gallery { display: block; position: relative; overflow: hidden; width: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: .65rem; }
 button.gallery, summary { cursor: pointer; }
-.portrait { aspect-ratio: 1.24; }
-.portrait img { object-fit: cover; }
 .gallery-control { position: absolute; right: .75rem; bottom: .75rem; display: flex; align-items: center; gap: .65rem; padding: .25rem .65rem; border-radius: 2rem; background: #171815ed; color: var(--ink); font-size: .82rem; font-variant-numeric: tabular-nums; }
 .gallery-control span { line-height: 1; font-size: 1.4rem; color: var(--accent); }
 .projects, .footer { border-top: 1px solid var(--line); padding-block: clamp(2.5rem, 4.5vw, 4.5rem); }
@@ -85,7 +83,74 @@ h2 { font-size: clamp(2.4rem, 4vw, 3.8rem); }
   .shell { width: 90%; }
   .hero, .project-grid { grid-template-columns: 1fr; }
   .hero { gap: 2rem; }
-  .portrait { aspect-ratio: 1.5; }
   .project-grid { gap: 2.5rem; }
   .nav .links { font-size: .875rem; }
+}
+
+.about-collage {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 32rem);
+  justify-self: center;
+  aspect-ratio: 1.22;
+}
+
+.about-collage-photo {
+  position: absolute;
+  overflow: hidden;
+  border-radius: .65rem;
+  background: var(--surface);
+  box-shadow: 0 .55rem 1.4rem rgb(0 0 0 / 30%);
+}
+
+.about-collage-photo img {
+  object-fit: cover;
+}
+
+.about-collage-photo:nth-child(1) {
+  inset: 7% auto auto 8%;
+  width: 29%;
+  aspect-ratio: 3 / 4;
+  rotate: -9deg;
+}
+
+.about-collage-photo:nth-child(2) {
+  inset: 4% 8% auto auto;
+  width: 44%;
+  aspect-ratio: 4 / 3;
+  rotate: 7deg;
+}
+
+.about-collage-photo:nth-child(3) {
+  inset: auto 7% 9% auto;
+  width: 30%;
+  aspect-ratio: 3 / 4;
+  rotate: 10deg;
+}
+
+.about-collage-photo:nth-child(4) {
+  inset: auto auto 7% 8%;
+  width: 40%;
+  aspect-ratio: 4 / 3;
+  rotate: -6deg;
+}
+
+.about-collage-photo:nth-child(5) {
+  inset: 29% auto auto 25%;
+  width: 51%;
+  aspect-ratio: 4 / 3;
+  rotate: -3deg;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .about-collage-photo:hover {
+    z-index: 1;
+    scale: 1.06;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .about-collage-photo {
+    transition: scale 180ms ease-out;
+  }
 }
