@@ -1,24 +1,17 @@
 import AboutMe from "@/components/AboutMe";
 import TopProjectSection from "@/components/TopProjectSection";
-import SectionLine from "@/components/SectionLine";
 import { topProjects } from "@/data/projects";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-14 px-24 py-6">
+    <div className="shell">
       <AboutMe />
-      <SectionLine></SectionLine>
-      <section className="w-full text-ink" aria-labelledby="top-projects-title">
-        <h2 id="top-projects-title" className="mb-10 text-5xl">
-          Top Projects
-        </h2>
-        <div className="grid grid-cols-3 gap-6">
-          {topProjects.map((project) => (
-            <TopProjectSection key={project.title} {...project} />
-          ))}
+      <section className="projects" id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Selected projects</h2>
+        <div className="project-grid">
+          {topProjects.map((project) => <TopProjectSection key={project.title} {...project} />)}
         </div>
       </section>
-      <SectionLine></SectionLine>
-    </main>
+    </div>
   );
 }
