@@ -9,7 +9,7 @@ export default function AboutMe() {
           alt="Portrait of Gareth McClellan"
           width={600}
           height={600}
-          className="h-auto w-full rounded-lg object-cover"
+          className="h-auto w-full rounded-4xl object-cover"
         />
       </div>
 
