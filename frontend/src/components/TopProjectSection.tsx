@@ -15,8 +15,8 @@ export default function TopProjectSection({
     <article className="flex min-w-0 flex-col gap-3">
       <ProjectImageStack images={images} title={title} />
       <div className="space-y-1 text-ink">
-        <h3 className="text-2xl">{title}</h3>
-        <p className="leading-relaxed">{summary}</p>
+        <h3 className="text-4xl">{title}</h3>
+        <p className="leading-relaxed text-xl">{summary}</p>
       </div>
     </article>
   );

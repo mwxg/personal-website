@@ -9,7 +9,7 @@ export default function Home() {
       <AboutMe />
       <SectionLine></SectionLine>
       <section className="w-full text-ink" aria-labelledby="top-projects-title">
-        <h2 id="top-projects-title" className="mb-6 text-3xl">
+        <h2 id="top-projects-title" className="mb-6 text-5xl">
           Top Projects
         </h2>
         <div className="grid grid-cols-3 gap-6">
