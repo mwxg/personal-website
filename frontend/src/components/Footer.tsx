@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="flex flex-wrap items-end justify-between gap-4 px-20 py-6 text-sm">
+    <footer className="flex flex-wrap items-end justify-between gap-4 px-24 py-6 text-sm">
       <section aria-labelledby="contact-heading" className="flex flex-col gap-4">
         <h2 id="contact-heading" className="text-lg">
           Contact
