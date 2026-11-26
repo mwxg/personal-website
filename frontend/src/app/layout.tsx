@@ -24,8 +24,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${redHatDisplay.variable} ${calSans.variable}`}>
-      <body>
+    <html lang="en" className={`${redHatDisplay.variable} ${calSans.variable} motion-safe:scroll-smooth`}>
+      <body id="top">
         <Navbar></Navbar>
         <main>{children}</main>
         <Footer></Footer>
