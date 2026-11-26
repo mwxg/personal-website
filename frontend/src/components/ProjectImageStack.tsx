@@ -26,6 +26,7 @@ export default function ProjectImageStack({ images, title }: ProjectImageStackPr
         {images.map((src, index) => {
           const layer = (index - frontIndex + images.length) % images.length;
           const offset = layer * layerOffset;
+          const rotation = layer * 3;
 
           return (
             <Image
@@ -37,7 +38,7 @@ export default function ProjectImageStack({ images, title }: ProjectImageStackPr
               draggable={false}
               className="rounded-4xl bg-surface object-cover ring-1 ring-inset ring-ink/35 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out"
               style={{
-                transform: `translate(${offset}px, ${offset}px)`,
+                transform: `translate(${offset}px, ${offset}px) rotate(${rotation}deg)`,
                 zIndex: images.length - layer,
               }}
             />
