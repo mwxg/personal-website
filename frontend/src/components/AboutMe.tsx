@@ -64,7 +64,7 @@ export default function AboutMe() {
         <h1 className="text-5xl hover:text-shadow-[0_0_10px_rgba(255,255,255,1.0)] transition-[text-shadow] duration-200">About Me</h1>
         <p className="text-2xl">
           I&apos;m Gareth McClellan, a <span className="text-accent">Computational Modeling &</span><br />
-          <span className="text-accent">Data Analytics</span> student at Virginia Tech. <br />
+          <span className="text-accent-gradient">Data Analytics</span> student at Virginia Tech. <br />
           Welcome to my digital portfolio.
         </p>
       </div>
