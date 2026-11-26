@@ -33,3 +33,18 @@
     font-weight: 400;
   }
 }
+
+@layer utilities {
+  .glass {
+    background-color: var(--color-surface);
+    border: 1px solid color-mix(in srgb, var(--color-ink) 45%, transparent);
+  }
+
+  @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass {
+      background-color: color-mix(in srgb, var(--color-surface) 90%, transparent);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+    }
+  }
+}
