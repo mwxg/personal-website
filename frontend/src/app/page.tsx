@@ -1,27 +1,7 @@
 import AboutMe from "@/components/AboutMe";
 import TopProjectSection from "@/components/TopProjectSection";
 import SectionLine from "@/components/SectionLine";
-
-const miniTGImages = [
-  "/images/MiniTG/image1.png",
-  "/images/MiniTG/image2.png",
-  "/images/MiniTG/image3.png",
-] as const;
-
-const topProjects = [
-  {
-    title: "Project One",
-    description: "A short description of the first featured project.",
-  },
-  {
-    title: "Project Two",
-    description: "A short description of the second featured project.",
-  },
-  {
-    title: "Project Three",
-    description: "A short description of the third featured project.",
-  },
-];
+import { topProjects } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -34,7 +14,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-3 gap-6">
           {topProjects.map((project) => (
-            <TopProjectSection key={project.title} images={miniTGImages} {...project} />
+            <TopProjectSection key={project.title} {...project} />
           ))}
         </div>
       </section>

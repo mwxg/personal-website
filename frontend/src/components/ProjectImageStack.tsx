@@ -30,7 +30,7 @@ export default function ProjectImageStack({ images, title }: ProjectImageStackPr
 
           return (
             <Image
-              key={src}
+              key={`${index}-${src}`}
               src={src}
               alt=""
               fill
