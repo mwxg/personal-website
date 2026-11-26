@@ -85,7 +85,6 @@ h2 { font-size: clamp(2.4rem, 4vw, 3.8rem); }
   cursor: pointer;
 }
 
-
 .project-details-button:hover { background-color: var(--super-muted); }
 
 .project-details-dialog {
@@ -182,6 +181,14 @@ h2 { font-size: clamp(2.4rem, 4vw, 3.8rem); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  a {
+    transition: color 180ms ease-in-out;
+  }
+
+  .work-link, .project-details-button {
+    transition: background-color 180ms ease-in-out;
+  }
+
   .about-collage-photo {
     transition: scale 180ms ease-out;
   }
