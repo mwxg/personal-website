@@ -18,6 +18,7 @@ const placeholderImage = "/images/placeholder.jpg";
 export const topProjects = [
   {
     title: "MiniTG",
+    link: "https://github.com/mwxg/minitg",
     summary: "Procedurally generate 2D terrain and biomes.",
     techStack: "C++ raylib raygui",
     images: miniTGImages,
@@ -28,6 +29,7 @@ export const topProjects = [
     title: "Freeboard",
     summary: "Smoothly control your machine with hand gestures.",
     techStack: "Python OpenCV Qt",
+    link: "https://github.com/mwxg/freeboard",
     images: freeboardImages,
     description:
       "Freeboard is a computer vision-based desktop application built with Python, MediaPipe, OpenCV, and PySide6. It uses real-time hand gesture recognition to enable touchless volume, brightness, and media controls, with customizable detection parameters and local camera processing.",
@@ -36,6 +38,7 @@ export const topProjects = [
     title: "Jingdex (精典)",
     summary: "Community-driven Chinese vocabulary decks.",
     techStack: "TypeScript Next.js Supabase",
+    link: "https://jingdex.com/",
     images: jingdexImages,
     description:
       "Jingdex (精典) is a community-driven Chinese dictionary and vocabulary learning platform built with Next.js, TypeScript, and Supabase. It features multilingual dictionary search, customizable vocabulary decks, community contributions, and a structured content review system with role-based moderation.",
