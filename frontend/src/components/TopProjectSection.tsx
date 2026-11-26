@@ -21,7 +21,7 @@ export default function TopProjectSection({ images, title, summary, techStack, d
       <h3>{title}</h3>
       <p className="project-summary">{summary}</p>
       <p className="eyebrow">{techStack}</p>
-      <ProjectDetails title={title} description={description} />
+      <ProjectDetails title={title} techStack={techStack} description={description} />
     </article>
   );
 }
