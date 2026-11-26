@@ -71,8 +71,9 @@ h2 { font-size: clamp(2.4rem, 4vw, 3.8rem); }
 .project-preview { aspect-ratio: 16 / 10; }
 .project-preview img { object-fit: contain; }
 .project h3 { margin-block: 1.2rem .6rem; font-size: clamp(1.65rem, 2.5vw, 2.25rem); }
-.project p, .footer small { color: var(--muted); }
-.project p { line-height: 1.65; }
+.project-summary, .footer small { color: var(--muted); }
+.project-summary { line-height: 1.65; }
+.project .eyebrow { margin-top: .35rem; }
 .project-details-button {
   margin-top: 1rem;
   padding: .4rem .65rem;
