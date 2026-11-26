@@ -34,6 +34,18 @@
   }
 }
 
+/* No scrollbar */
+html {
+  overflow: auto; /* Ensures scrolling still works */
+  scrollbar-width: none; /* Standard property (Firefox, Chrome 121+, Safari 18.2+, Edge 121+) */
+  -ms-overflow-style: none; /* Legacy Edge and Internet Explorer */
+}
+/* Older WebKit browsers (Chrome, Safari, Opera) */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+
 @layer utilities {
   .glass {
     background-color: var(--color-surface);
