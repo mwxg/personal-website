@@ -5,9 +5,9 @@ const miniTGImages = [
 ] as const;
 
 const jingdexImages = [
-  "/images/Jingdex/image1.png",
-  "/images/Jingdex/image2.png",
-  "/images/Jingdex/image3.png",
+  "/images/Jingdex/imagelogo.png",
+  "/images/Jingdex/dictimage.png",
+  "/images/Jingdex/jingdexlanding.png",
 ] as const;
 
 const placeholderImage = "/images/placeholder.jpg";
