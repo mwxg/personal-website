@@ -4,9 +4,11 @@ import Image from "next/image";
 import { useState } from "react";
 
 const aboutImages = [
-  "/images/placeholder.jpg",
-  "/images/MiniTG/image1.png",
-  "/images/Jingdex/jingdexlanding.png",
+  "/images/AboutMe/image1.jpg",
+  "/images/AboutMe/image2.jpeg",
+  "/images/AboutMe/image3.jpg",
+  "/images/AboutMe/image4.jpeg",
+  "/images/AboutMe/image5.jpg",
 ] as const;
 
 export default function AboutMe() {
@@ -19,7 +21,7 @@ export default function AboutMe() {
           type="button"
           aria-label="Show next About Me image"
           onClick={() => setImageIndex((current) => (current + 1) % aboutImages.length)}
-          className="border-4 border-transparent hover:border-4 hover:border-white motion-safe:ease-out motion-safe:transition-transform motion-safe:duration-400 motion-safe:hover:scale-[1.05] relative block aspect-square w-full cursor-pointer overflow-hidden rounded-4xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+          className="border-4 border-transparent hover:border-4 hover:border-accent motion-safe:ease-out motion-safe:transition-transform motion-safe:duration-400 motion-safe:hover:scale-[1.05] relative block aspect-square w-full cursor-pointer overflow-hidden rounded-4xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
         >
           {aboutImages.map((src, index) => (
             <Image
