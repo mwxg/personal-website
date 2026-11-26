@@ -4,8 +4,12 @@ export default function Navbar() {
       <nav className="shell nav" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label="Gareth McClellan, back to top">gm<span>.</span></a>
         <div className="links">
-          <a href="https://github.com/mwxg" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/gareth-mcclellan/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/mwxg" target="_blank" rel="noopener noreferrer">
+            GitHub <span className="nav-external-icon" aria-hidden="true" />
+          </a>
+          <a href="https://www.linkedin.com/in/gareth-mcclellan/" target="_blank" rel="noopener noreferrer">
+            LinkedIn <span className="nav-external-icon" aria-hidden="true" />
+          </a>
         </div>
       </nav>
     </header>

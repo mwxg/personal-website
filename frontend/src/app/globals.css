@@ -49,6 +49,13 @@ a:hover { color: var(--accent); }
 .brand { font-size: 2.2rem; }
 .brand span, h1 span { color: var(--accent); }
 .links { gap: clamp(.8rem, 2.8vw, 2.5rem); color: var(--muted); font-size: .95rem; }
+.nav-external-icon {
+  display: inline-block;
+  width: .75em;
+  height: .75em;
+  background-color: currentColor;
+  mask: url("/icons/openlink.svg") center / contain no-repeat;
+}
 
 .hero {
   display: grid;
