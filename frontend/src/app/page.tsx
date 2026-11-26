@@ -5,7 +5,7 @@ import { topProjects } from "@/data/projects";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-14 px-8 py-6">
+    <main className="flex flex-col gap-14 px-12 py-6">
       <AboutMe />
       <SectionLine></SectionLine>
       <section className="w-full text-ink" aria-labelledby="top-projects-title">
