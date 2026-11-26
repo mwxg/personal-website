@@ -28,7 +28,7 @@ h1, h2, h3, .brand {
 }
 
 a { text-decoration: none; }
-a:hover, summary:hover { color: var(--accent); }
+a:hover { color: var(--accent); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 ::selection { background: var(--accent); color: var(--page); }
 .shell { width: min(88%, 76rem); margin-inline: auto; }
@@ -62,7 +62,7 @@ h1 { font-size: clamp(4rem, 7.7vw, 7rem); line-height: .94; margin-block: 1.3rem
 .work-link { display: inline-block; margin-top: 1.8rem; background: var(--accent); color: var(--page); padding: .7rem 1.2rem; border-radius: .4rem; font-weight: 800; }
 .work-link:hover { background: var(--ink); color: var(--page); }
 .gallery { display: block; position: relative; overflow: hidden; width: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: .65rem; }
-button.gallery, summary { cursor: pointer; }
+button.gallery { cursor: pointer; }
 .gallery-control { position: absolute; right: .75rem; bottom: .75rem; display: flex; align-items: center; gap: .65rem; padding: .25rem .65rem; border-radius: 2rem; background: #171815ed; color: var(--ink); font-size: .82rem; font-variant-numeric: tabular-nums; }
 .gallery-control span { line-height: 1; font-size: 1.4rem; color: var(--accent); }
 .projects, .footer { border-top: 1px solid var(--line); padding-block: clamp(2.5rem, 4.5vw, 4.5rem); }
@@ -73,9 +73,18 @@ h2 { font-size: clamp(2.4rem, 4vw, 3.8rem); }
 .project h3 { margin-block: 1.2rem .6rem; font-size: clamp(1.65rem, 2.5vw, 2.25rem); }
 .project p, .footer small { color: var(--muted); }
 .project p { line-height: 1.65; }
-.project details { margin-top: 1rem; }
-.project summary { width: fit-content; color: var(--accent); font-size: .95rem; }
-.project details p { margin-top: .75rem; }
+.project-details-button {
+  margin-top: 1rem;
+  padding: .4rem .65rem;
+  border-radius: .4rem;
+  background-color: var(--surface);
+  color: color-mix(in srgb, var(--muted) 85%, var(--super-muted));
+  font-family: var(--font-fira-mono), monospace;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.project-details-button:hover { background-color: var(--super-muted); }
 .footer { align-items: flex-end; gap: 1.5rem; flex-wrap: wrap; }
 .footer h2 { font-size: 2rem; margin-bottom: 1rem; }
 .footer .links { text-decoration: underline; text-underline-offset: .25em; }

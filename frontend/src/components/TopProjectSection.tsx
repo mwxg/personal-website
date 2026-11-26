@@ -8,7 +8,7 @@ type ProjectProps = {
   description: string;
 };
 
-export default function TopProjectSection({ images, title, summary, description }: ProjectProps) {
+export default function TopProjectSection({ images, title, summary }: ProjectProps) {
   return (
     <article className="project">
       {images.length > 1 ? (
@@ -18,10 +18,9 @@ export default function TopProjectSection({ images, title, summary, description 
       )}
       <h3>{title}</h3>
       <p>{summary}</p>
-      <details>
-        <summary>Project details<span className="sr-only"> for {title}</span></summary>
-        <p>{description}</p>
-      </details>
+      <button type="button" className="project-details-button">
+        Project details<span className="sr-only"> for {title}</span>
+      </button>
     </article>
   );
 }
