@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="glass sticky top-4 z-10 flex items-center px-8 py-4 text-ink mx-4 my-4 rounded-full">
+    <nav className="shadow-[0_0_10px_rgba(255,255,255,0.2)] glass sticky top-4 z-10 flex items-center px-8 py-4 text-ink mx-4 my-4 rounded-full">
       <Link href="/" className="font-bold hover:text-accent transition duration-200">
         Gareth McClellan
       </Link>
