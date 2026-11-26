@@ -6,6 +6,7 @@
   --surface: #212220;
   --ink: #f5f2ea;
   --muted: #b3b3aa;
+  --super-muted: #363636;
   --line: #383934;
   --accent: #70a1ef;
   --nav-height: 4.5rem;
@@ -55,7 +56,7 @@ a:hover, summary:hover { color: var(--accent); }
   padding-block: clamp(3rem, 6vw, 6rem);
 }
 
-.eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: .8rem; font-weight: 800; color: var(--accent); }
+.eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: .8rem; font-weight: 800; color: var(--super-muted); font-family: var(--font-fira-mono)}
 h1 { font-size: clamp(4rem, 7.7vw, 7rem); line-height: .94; margin-block: 1.3rem; }
 .intro { color: var(--muted); max-width: 28rem; font-size: clamp(1.1rem, 1.7vw, 1.4rem); line-height: 1.5; }
 .work-link { display: inline-block; margin-top: 1.8rem; background: var(--accent); color: var(--page); padding: .7rem 1.2rem; border-radius: .4rem; font-weight: 800; }

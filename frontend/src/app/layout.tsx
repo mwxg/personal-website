@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cal_Sans, Red_Hat_Display } from "next/font/google";
+import { Cal_Sans, Red_Hat_Display, Fira_Mono } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar"
@@ -17,6 +17,12 @@ const calSans = Cal_Sans({
   variable: "--font-cal-sans",
 });
 
+const firaMono = Fira_Mono({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-fira-mono",
+});
+
 export const metadata: Metadata = {
   title: "Gareth McClellan",
   description: "Gareth McClellan's personal website",
@@ -24,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${redHatDisplay.variable} ${calSans.variable} motion-safe:scroll-smooth`}>
+    <html lang="en" className={`${redHatDisplay.variable} ${calSans.variable} ${firaMono.variable} motion-safe:scroll-smooth`}>
       <body id="top">
         <Navbar></Navbar>
         <main>{children}</main>
