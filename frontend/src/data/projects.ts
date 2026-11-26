@@ -4,25 +4,34 @@ const miniTGImages = [
   "/images/MiniTG/image3.png",
 ] as const;
 
+const jingdexImages = [
+  "/images/Jingdex/image1.png",
+  "/images/Jingdex/image2.png",
+  "/images/Jingdex/image3.png",
+] as const;
+
 const placeholderImage = "/images/placeholder.jpg";
 const placeholderImages = [placeholderImage, placeholderImage, placeholderImage] as const;
 
 export const topProjects = [
   {
     title: "MiniTG",
+    summary: "Procedurally generate 2D terrain and biomes.",
     images: miniTGImages,
     description:
       "MiniTG is a procedural 2D terrain and biome generator built with C++20. It combines deterministic value noise and fractal Brownian motion to generate 13 terrain types based on elevation, moisture, and temperature, with customizable generation parameters and visualization modes.",
   },
   {
     title: "Freeboard",
+    summary: "Smoothly control your machine with hand gestures.",
     images: placeholderImages,
     description:
       "Freeboard is a computer vision-based desktop application built with Python, MediaPipe, OpenCV, and PySide6. It uses real-time hand gesture recognition to enable touchless volume, brightness, and media controls, with customizable detection parameters and local camera processing.",
   },
   {
-    title: "Jingdex",
-    images: placeholderImages,
+    title: "Jingdex (精典)",
+    summary: "Community-driven Chinese vocabulary decks.",
+    images: jingdexImages,
     description:
       "Jingdex (精典) is a community-driven Chinese dictionary and vocabulary learning platform built with Next.js, TypeScript, and Supabase. It features multilingual dictionary search, customizable vocabulary decks, community contributions, and a structured content review system with role-based moderation.",
   },
