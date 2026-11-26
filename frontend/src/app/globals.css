@@ -32,13 +32,15 @@ a:hover { color: var(--accent); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 ::selection { background: var(--accent); color: var(--page); }
 .shell { width: min(88%, 76rem); margin-inline: auto; }
+.site-header, .project-details-dialog {
+  background-color: color-mix(in srgb, var(--page) 76%, transparent);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
 .site-header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: color-mix(in srgb, var(--page) 76%, transparent);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
   border-bottom: 1px solid rgb(255 255 255 / 12%);
 }
 .nav, .links, .footer { display: flex; align-items: center; }
@@ -95,7 +97,6 @@ h2 { font-size: clamp(2.4rem, 4vw, 3.8rem); }
   overflow: auto;
   border: 1px solid var(--line);
   border-radius: .75rem;
-  background: var(--surface);
   color: var(--ink);
   box-shadow: 0 1rem 3rem #0006;
 }
