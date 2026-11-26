@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import TopProjectSection from "@/components/TopProjectSection";
+import SectionLine from "@/components/SectionLine";
 
 const topProjects = [
   {
@@ -23,6 +24,7 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-14 px-8 py-6">
       <AboutMe />
+      <SectionLine></SectionLine>
       <section className="w-full text-ink" aria-labelledby="top-projects-title">
         <h2 id="top-projects-title" className="mb-6 text-3xl">
           Top Projects
@@ -33,6 +35,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <SectionLine></SectionLine>
     </main>
   );
 }
