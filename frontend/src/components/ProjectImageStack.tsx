@@ -8,7 +8,7 @@ type ProjectImageStackProps = {
   title: string;
 };
 
-const layerOffset = 8;
+const layerOffset = 20;
 
 export default function ProjectImageStack({ images, title }: ProjectImageStackProps) {
   const [frontIndex, setFrontIndex] = useState(0);
