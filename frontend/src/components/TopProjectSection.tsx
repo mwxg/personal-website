@@ -26,7 +26,8 @@ export default function TopProjectSection({ images, title, summary, techStack, d
         <ProjectDetails title={title} techStack={techStack} description={description} />
         {link ? (
           <a className="project-details-button" href={link} target="_blank" rel="noopener noreferrer">
-            Check it out<span className="sr-only"> for {title}</span>
+            Check it out <span className="external-link-icon" aria-hidden="true" />
+            <span className="sr-only"> for {title}</span>
           </a>
         ) : (
           <button type="button" className="project-details-button" disabled>Check it out</button>
