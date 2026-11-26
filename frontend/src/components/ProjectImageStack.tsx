@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 type ProjectImageStackProps = {
-  images: readonly [string, string, string];
+  images: readonly [string, ...string[]];
   title: string;
 };
 

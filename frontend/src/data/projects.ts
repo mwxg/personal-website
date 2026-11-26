@@ -9,9 +9,11 @@ const jingdexImages = [
   "/images/Jingdex/dictimage.png",
   "/images/Jingdex/jingdexlanding.png",
 ] as const;
+const freeboardImages = [
+  "/images/Freeboard/freeboardDemo.gif",
+] as const;
 
 const placeholderImage = "/images/placeholder.jpg";
-const placeholderImages = [placeholderImage, placeholderImage, placeholderImage] as const;
 
 export const topProjects = [
   {
@@ -24,7 +26,7 @@ export const topProjects = [
   {
     title: "Freeboard",
     summary: "Smoothly control your machine with hand gestures.",
-    images: placeholderImages,
+    images: freeboardImages,
     description:
       "Freeboard is a computer vision-based desktop application built with Python, MediaPipe, OpenCV, and PySide6. It uses real-time hand gesture recognition to enable touchless volume, brightness, and media controls, with customizable detection parameters and local camera processing.",
   },

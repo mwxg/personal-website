@@ -1,7 +1,7 @@
 import ProjectImageStack from "./ProjectImageStack";
 
 type TopProjectSectionProps = {
-  images: readonly [string, string, string];
+  images: readonly [string, ...string[]];
   title: string;
   summary: string;
 };
