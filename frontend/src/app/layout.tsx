@@ -3,6 +3,7 @@ import { Cal_Sans, Red_Hat_Display } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer";
 
 const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <Navbar></Navbar>
         <main>{children}</main>
+        <Footer></Footer>
       </body>
     </html>
   );
