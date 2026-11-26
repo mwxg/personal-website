@@ -24,13 +24,13 @@ export default function AboutMe() {
   const currentImage = aboutImages[imageIndex];
 
   return (
-    <section className="flex w-full flex-col items-start gap-8 text-ink [--about-photo-height-limit:45vw] md:w-2/3 md:flex-row md:[--about-photo-height-limit:30vw]">
+    <section className="flex w-full flex-col items-start gap-8 text-ink [--about-photo-height-limit:45vw] md:flex-row md:[--about-photo-height-limit:30vw]">
       <div className="shrink-0">
         <button
           type="button"
           aria-label="Show next About Me image"
           onClick={() => setImageIndex((current) => (current + 1) % aboutImages.length)}
-          className="relative block box-content cursor-pointer overflow-hidden rounded-4xl border-4 border-transparent hover:border-accent motion-safe:transition-[width] motion-safe:duration-300 motion-safe:ease-out focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+          className="relative block box-content cursor-pointer overflow-hidden rounded-4xl motion-safe:hover:scale-[1.03] motion-safe:transition-[width,scale] motion-safe:duration-300 motion-safe:ease-out focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           style={{
             height: photoHeight,
             width: `calc(${photoHeight} * ${currentImage.ratio})`,
@@ -63,8 +63,9 @@ export default function AboutMe() {
       <div className="flex min-w-0 flex-1 flex-col gap-4">
         <h1 className="text-5xl hover:text-shadow-[0_0_10px_rgba(255,255,255,1.0)] transition-[text-shadow] duration-200">About Me</h1>
         <p className="text-2xl">
-          I&apos;m Gareth McClellan, a developer who enjoys building thoughtful,
-          useful experiences for the web.
+          I&apos;m Gareth McClellan, a <span className="text-accent">Computational Modeling &</span><br />
+          <span className="text-accent">Data Analytics</span> student at Virginia Tech. <br />
+          Welcome to my digital portfolio.
         </p>
       </div>
     </section>
