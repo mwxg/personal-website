@@ -14,7 +14,7 @@ export default function AboutMe() {
       </div>
 
       <div className="flex w-1/2 flex-col gap-4">
-        <h1 className="text-5xl">About Me</h1>
+        <h1 className="text-5xl hover:text-shadow-[0_0_10px_rgba(255,255,255,1.0)] transition-[text-shadow] duration-200">About Me</h1>
         <p className="text-2xl">
           I&apos;m Gareth McClellan, a developer who enjoys building thoughtful,
           useful experiences for the web.
