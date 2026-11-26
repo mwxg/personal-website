@@ -25,7 +25,7 @@ export default function TopProjectSection({ images, title, summary, techStack, d
       <div className="project-actions">
         <ProjectDetails title={title} techStack={techStack} description={description} />
         {link ? (
-          <a className="project-details-button" href={link}>
+          <a className="project-details-button" href={link} target="_blank" rel="noopener noreferrer">
             Check it out<span className="sr-only"> for {title}</span>
           </a>
         ) : (

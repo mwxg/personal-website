@@ -5,7 +5,7 @@ export default function Footer() {
         <h2>Contact</h2>
         <div className="links">
           <a href="mailto:mcclellangareth@gmail.com">Email me</a>
-          <a href="https://www.linkedin.com/in/gareth-mcclellan/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/gareth-mcclellan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
       <small>© 2026 Gareth McClellan</small>
