@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Libertinus_Serif, Red_Hat_Display } from "next/font/google";
+import { Cal_Sans, Red_Hat_Display } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar"
@@ -10,10 +10,10 @@ const redHatDisplay = Red_Hat_Display({
   variable: "--font-red-hat-display",
 });
 
-const libertinusSerif = Libertinus_Serif({
+const calSans = Cal_Sans({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-libertinus-serif",
+  variable: "--font-cal-sans",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${redHatDisplay.variable} ${libertinusSerif.variable}`}>
+    <html lang="en" className={`${redHatDisplay.variable} ${calSans.variable}`}>
       <body>
         <Navbar></Navbar>
         <main>{children}</main>
