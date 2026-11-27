@@ -9,8 +9,10 @@
   --super-muted: #494949;
   --line: #383934;
   --accent: #70a1ef;
+  --text-gradient: linear-gradient(90deg, var(--accent), #c4a7ff);
   --nav-height: 4.5rem;
   scroll-padding-top: calc(var(--nav-height) + 1rem);
+  --glow-shadow: 0 0 12px rgb(255 255 255 / 70%);
 }
 
 body {
@@ -48,6 +50,25 @@ a:hover { color: var(--accent); }
 .nav { min-height: var(--nav-height); }
 .brand { font-size: 2.2rem; }
 .brand span, h1 span { color: var(--accent); }
+
+span.text-gradient {
+  color: var(--accent);
+}
+
+@supports (background-clip: text) {
+  @media (forced-colors: none) {
+    span.text-gradient {
+      background-image: var(--text-gradient);
+      background-clip: text;
+      color: transparent;
+    }
+
+    span.text-gradient::selection {
+      color: var(--page);
+    }
+  }
+}
+
 .links { gap: clamp(.8rem, 2.8vw, 2.5rem); color: var(--muted); font-size: .95rem; }
 .external-link-icon {
   display: inline-block;
@@ -235,4 +256,8 @@ h2 { font-size: clamp(2.4rem, 4vw, 3.8rem); }
   main {
     animation: hero-enter 800ms ease-out 300ms backwards;
   }
+}
+
+@utility glow-shadow {
+  text-shadow: var(--glow-shadow);
 }
