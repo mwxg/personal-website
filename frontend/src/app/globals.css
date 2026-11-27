@@ -66,6 +66,12 @@ span.text-gradient {
     span.text-gradient::selection {
       color: var(--page);
     }
+
+    a.hover-text-gradient:hover {
+      background-image: var(--text-gradient);
+      background-clip: text;
+      color: transparent;
+    }
   }
 }
 
